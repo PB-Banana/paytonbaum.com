@@ -1,0 +1,130 @@
+:root {
+	--primary-color: #570099;
+	--secondary-color: #fff478;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-text-1 {
+	font-size: 3vw;
+}
+
+.body-text-1 {
+	font-size: 1.5vw;
+}
+
+.body-text-2 {
+    font-size: 0.25vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+	color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+    padding: 15px 30px;
+	margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    position: relative;
+    animation: slideInTop 1s ease-out forwards;
+}
+
+.navbar .home-name {
+	text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar .home-link a {
+    text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+	align-items: center;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.boxes-container {
+	display: flex;
+	justify-content: left;
+	margin: 20px;
+}
+
+.box-1 {
+	background-color: #ffffff;
+	border-radius: 25px;
+	position: relative;
+	width: 100%;
+    height: 275px;
+	padding-top: 20%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+	overflow: auto;
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.box-1-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+}
