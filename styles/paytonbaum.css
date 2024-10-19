@@ -1,15 +1,117 @@
+:root {
+	--primary-color: #570099;
+	--secondary-color: #fff478;
+}
+
+.header-text-1 {
+	font-size: 3vw;
+}
+
+.body-text-1 {
+	font-size: 1.5vw;
+}
+
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    background-color: var(--primary-color);
     justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
     font-family: Arial, sans-serif;
 }
 
-.title-text {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 20px;
+.navbar {
+    background-color: var(--secondary-color);
+	color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+    padding: 15px 30px;
+	margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+.navbar .home-name {
+	text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar .home-link a {
+    text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+	align-items: center;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+	color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.boxes-container {
+	display: flex;
+	justify-content: left;
+	margin: 20px;
+
+.box-1 {
+	background-color: #ffffff;
+	border-radius: 25px;
+	position: relative;
+	margin-right: 20px;
+	width: 60%;
+	padding-top: 20%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+	overflow: hidden;
+}
+
+.box-1-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+	font-size: 3vw;
+}
+
+.box-2 {
+	background-color: #fed330;
+	background-image: url("../images/garfieldBackground.jpeg");
+    background-size: cover;
+    background-position: center;
+	border-radius: 25px;
+	position: relative;
+	width: 40%;
+	padding-top: 20%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+	overflow: hidden;
+}
+
+.box-2-content {
+	color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+	margin-top: 5%;
+	font-size: 3vw;
+	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
