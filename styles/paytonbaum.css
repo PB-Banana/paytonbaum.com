@@ -3,6 +3,39 @@
 	--secondary-color: #fff478;
 }
 
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%); /* Start from off-screen to the right */
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .header-text-1 {
 	font-size: 3vw;
 }
@@ -31,6 +64,7 @@ body {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     position: relative;
+    animation: slideInTop 1s ease-out forwards;
 }
 
 .navbar .home-name {
@@ -68,6 +102,7 @@ body {
 	display: flex;
 	justify-content: left;
 	margin: 20px;
+}
 
 .box-1 {
 	background-color: #ffffff;
@@ -78,6 +113,7 @@ body {
 	padding-top: 20%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 	overflow: hidden;
+    animation: slideInLeft 1s ease-out forwards;
 }
 
 .box-1-content {
@@ -91,7 +127,7 @@ body {
 }
 
 .box-2 {
-	background-color: #fed330;
+	background-color: #ffffff;
 	background-image: url("../images/garfieldBackground.jpeg");
     background-size: cover;
     background-position: center;
@@ -101,6 +137,7 @@ body {
 	padding-top: 20%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 	overflow: hidden;
+    animation: slideInRight 1s ease-out forwards;
 }
 
 .box-2-content {
